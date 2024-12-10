@@ -1,0 +1,1 @@
+Server-side custom chat colors for connected clients.  Clients can type "/chatcolor #00ff00" or whatever hex code they want for their chat text color.  The chat colors carry over between server sessions.  The custom color mod does not need to be installed on all clients, just the host.
