@@ -33,6 +33,20 @@ namespace CustomChatColors {
             }
         }
 
+        public void RemoveUserColor(string steamID) {
+            using (SQLiteConnection connection = new SQLiteConnection(_connectionStr)) {
+                connection.Open();
+                string query = $@"
+                    DELETE FROM {_tableName} WHERE SteamID = @SteamID
+                ";
+
+                using (SQLiteCommand command = new SQLiteCommand(query, connection)) {
+                    command.Parameters.AddWithValue("@SteamID", steamID);
+                    command.ExecuteNonQueryAsync();
+                }
+            }
+        }
+
         /// <summary>
         /// Can return null on failure.
         /// </summary>
@@ -98,7 +112,7 @@ namespace CustomChatColors {
                 using (SQLiteCommand command = new SQLiteCommand(insert, connection)) {
                     command.Parameters.AddWithValue("@SteamID", steamID);
                     command.Parameters.AddWithValue("@Color", color);
-                    command.ExecuteNonQuery();
+                    command.ExecuteNonQueryAsync();
                 }
             }
         }

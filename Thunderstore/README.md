@@ -1,0 +1,1 @@
+Adds "/chatcolor #00ff00" functionality to the server, allowing connected clients to customize their chat color with any hex color value.  BepInEx Fixer is recommended in order to host using BepInEx.
