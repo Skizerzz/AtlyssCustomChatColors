@@ -1,6 +1,6 @@
 {
     "name": "ChatColors",
-    "version_number": "1.0.3",
+    "version_number": "1.0.5",
     "website_url": "https://github.com/Skizerzz/AtlyssCustomChatColors",
     "description": "Adds '/chatcolor #00ff00' functionality to the server, allowing connected clients to customize their chat color with any hex color value.  BepInEx Fixer is recommended in order to host using BepInEx.",
     "dependencies": []
