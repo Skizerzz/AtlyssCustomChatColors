@@ -211,11 +211,11 @@ namespace CustomChatColors {
         /// This function checks for color tags every frame and removes them, short-circuiting to prevent this.
         /// It does nothing else of pertinence.
         /// </summary>
-        [HarmonyPatch(typeof(Player), "<Handle_ServerParameters>g__Handle_NicknameParams|79_0")]
-        public static class Player_Handle_ServerConditions {
-            public static bool Prefix() {
-                return false;
-            }
-        }
+        //[HarmonyPatch(typeof(Player), "<Handle_ServerParameters>g__Handle_NicknameParams|82_0")]
+        //public static class Player_Handle_ServerConditions {
+        //    public static bool Prefix() {
+        //        return false;
+        //    }
+        //}
     }
 }

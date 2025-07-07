@@ -11,3 +11,9 @@
 
 1.0.5:
 - Updated for Atlyss patch 1.6.0a
+
+1.0.6:
+- Updated for Atlyss patch 1.6.2a
+
+1.0.7:
+- Set SQLite as dependency and removed from package
